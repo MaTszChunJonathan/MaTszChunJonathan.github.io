@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+ 
+  font-family: Raleway;
+  margin: 0
+}
+.head-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+  background-color: #330000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+.namebar {
+  color: White;
+  margin-left: 27px;
+  font-family: Cursive;
+}
+#navbar {
+  display: flex;
+  margin-right: 30px;
+}
+.nav-link {
+  margin-right: 50px;
+}
+.nav-link a {
+  color: white;
+  text-decoration: none;
+}
+.nav-link a:hover{
+  border-bottom: 1px solid white;
+}
+#welcome-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-image: url(https://www.ecopetit.cat/wpic/mpic/120-1209689_computer-background-image-hd.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+#welcome-section:after {
+  content: '';
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+}
+#welcome-section *{
+  position: relative;
+  z-index: 1;
+}
+.welcome-wrapper {
+  color: white;
+}
+.welcome-wrapper h1 {
+  font-size: 60px
+}
+.welcome-wrapper p {
+  color: LightGray
+}
+img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  top:30px;
+  right:200px;
+}
+
+#projects {
+  background-color: #f8c05bb5
+}
+#my-projects {
+  text-align: center;
+  padding: 50px;
+  color: purple;
+  font-size: 50px;
+  margin: 0
+}
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.project-tile {
+  padding: 28px; 
+}
+.project-image {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s;
+  border-radius: 20%;
+  border: 10px solid purple;
+}
+.project-image:hover {
+  background-size: 100% 45%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.subtitle-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+  transition: 0.5s; 
+}
+.subtitle-wrapper:hover {
+  color:black;
+  font-weight: bold;
+  font-size: 19px;
+}
+.subtitle a {
+  text-decoration: none;
+  color: #4B0082;
+}
+
+.contact-wrapper {
+  text-align: center;
+  background-color: #860000;
+  color: white;
+}
+.contact-intro {
+  padding: 50px 50px 0px 50px;
+  font-size: 30px;
+  margin-top: 0;
+}
+h3 p{
+  font-size: 18px;
+}
+.contact-logo-wrapper {
+  display:flex; 
+  align-items: center;
+  padding: 30px;
+  text-decoration: none;
+  position: relative;
+  color: white;
+  top: 0px;
+  transition: 0.3s;
+}
+.contact-logo-wrapper:hover {
+  position:relative;
+  top: 5px;
+}
+.contact-logos-wrapper {
+  display: flex;
+  justify-content: center;
+}  
+.contact-logos-wrapper a {
+  font-size: 30px;
+}
+.contact-logos-wrapper a i{
+  margin-right: 5px;
+}
+footer {
+  text-align: right;
+  background-color: gray;
+  color: white;
+}
+@media(max-width:200px){
+  contact-wrapper {
+    padding: 20px;
+  }
+}
